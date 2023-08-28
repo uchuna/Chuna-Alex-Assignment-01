@@ -14,19 +14,19 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
-function sumOfNumbersTo(destination) {
-  let answer = 0;
-  for (let index = 1; index <= destination; index++) {
+// function sumOfNumbersTo(destination) {
+//   let answer = 0;
+//   for (let index = 1; index <= destination; index++) {
 
-    answer += index;
+//     answer += index;
 
-  }
+//   }
 
-  return answer;
-}
+//   return answer;
+// }
 
 
-assignment.sumOfNumbersTo = sumOfNumbersTo;
+// assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -39,12 +39,12 @@ assignment.sumOfNumbersTo = sumOfNumbersTo;
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-  if (destination <= 1) {
-  }
+
   let sum = 0;
   let count = 0;
   let arrayOfEvenNumbers = [];
-  for (let i = 1; i <= destination; i++) {
+  
+  for (let i = 2; i <= destination; i++) {
     if (i % 2 === 0) {
       count++;
       sum += i;
@@ -59,7 +59,7 @@ function countEvenNumbersWithin(destination) {
   };
 }
 
-
+assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
