@@ -15,19 +15,18 @@ const assignment = {};
  * @returns number the sum of the numbers from 1 to destination
  */
 function sumOfNumbersTo(destination) {
-    if (destination <= 1) {
-    }
-  
-    let answer = 0;
-    for (let index = 1; index <= destination; index++) {
-      answer += index;
-    }
-    let sum = answer+ destination;
-    return sum;
+  let answer = 0;
+  for (let index = 1; index <= destination; index++) {
+
+    answer += index;
+
+  }
+
+  return answer;
 }
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -40,24 +39,24 @@ function sumOfNumbersTo(destination) {
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-    if (destination <= 1) {
-    }
-    let sum = 0;
-    let count = 0;
-    let arrayOfEvenNumbers = [];
+  if (destination <= 1) {
+  }
+  let sum = 0;
+  let count = 0;
+  let arrayOfEvenNumbers = [];
   for (let i = 1; i <= destination; i++) {
-      if (i % 2 === 0) {
-        count++;
-        sum += i;
-        arrayOfEvenNumbers.push(i);
-      }
+    if (i % 2 === 0) {
+      count++;
+      sum += i;
+      arrayOfEvenNumbers.push(i);
     }
-    
-    return {
-      count: count,
-      sum: sum,
-      arrayOfEvenNumbers: arrayOfEvenNumbers
-    };
+  }
+
+  return {
+    count: count,
+    sum: sum,
+    arrayOfEvenNumbers: arrayOfEvenNumbers
+  };
 }
 
 
@@ -78,9 +77,9 @@ function countEvenNumbersWithin(destination) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    let result = [];
+  let result = [];
 
-    return result;
+  return result;
 }
 
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
